@@ -1,164 +1,147 @@
 <!DOCTYPE html>
-
 <html>
   <head>
-    <title>Sample Web Page</title>
+    <title>Keshy Site</title>
+     <link rel="icon" type="image/x-icon" href="KeshyLogo.png">
 
-     <style>
-        .nav-bar {
-            display: flex;
-            border-style: solid;
-            border-width: 1px;
-            border-color: black;
-            background-color: #283618;
-            justify-content: space-around;
-        }
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #20052b;
+        color: #d6ebff; 
+      }
 
-        .nav-bttn {
-        	display: flex;
-            border-style: solid;
-            border-width: 1px;
-            border-color: red;
-        }
+      .nav-bar {
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        background-color: #4E148C; 
+        color: #d6ebff;
+      }
 
-        .feat-photo {
-        	display: flex;
-            border-style: solid;
-            border-width: 1px;
-            border-color: red;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items :center;
-        }
+      .logo {
+        display: flex;
+        width: 100px;
+        height: 100px;
+      }
 
-        .feat-projects {
-        	display: flex;
-            border-style: solid;
-            border-width: 1px;
-            border-color: red;
-            flex-direction: column;
-            justify-content: space-around;
-            align-items :center;
-        }
+      .feat-photo {
+        display: flex;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+      }
 
-         .projects {
-        	display: flex;
-            border-style: solid;
-            border-width: 1px;
-            border-color: red;
-            flex-direction: row;
-            justify-content: space-between;
-        }
+      .f-photo {
+        display: flex;
+        width: 960px;
+        height: 540px;
+      }
 
+      .feat-projects {
+        padding: 20px;
+        text-align: center;
+      }
 
-        .skills-autobio {
-        	display: flex;
-            border-style: solid;
-            border-width: 1px;
-            border-color: red;
-            flex-direction: row;
-            justify-content: space-around;
-        }
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+      }
 
-        .sk-aupanel {
-        	display: flex;
-        	align-items :center;
-        	flex-direction: column;
+      .project {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 200px;
+        background-color: #584da3; 
+        border-radius: 8px;
+        box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
+      }
 
-        }
+      .p-photo {
+        display: flex;
+        width: 240px;
+        height: 135px;
+      }
 
-        .body {
-        	display: flex;
-            border-style: solid;
-            border-width: 1px;
-            border-color: black;
-            flex-direction: column;
-            background-color: #FEFAE0;
-        }
+      .skills-autobio {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+        background-color: #3c1251; 
+      }
 
-        .project{
-        	display: flex;
-            border-style: solid;
-            border-width: 1px;
-            height:100px;
-            width: 200px;
-        }
+      .sk-aupanel {
+        padding: 20px;
+        text-align: center;
+      }
 
-        .footer {
-            display: flex;
-            border-style: solid;
-            border-width: 1px;
-            border-color: black;
-            background-color: #283618;
-            justify-content: space-around;
-        }
-
-
-
+      .footer {
+        padding: 20px;
+        text-align: left;
+        background-color: #4E148C; 
+        color: #d6ebff;
+      }
     </style>
-
-
   </head>
 
   <body>
-   <div class  = "body">
+    <div class="body">
+      <div class="nav-bar">
+        <img src="KeshyLogo.png" class ="logo" alt="KeshyLogo">
+        <h1>Keshy Weshy Codes!</h1>
+      </div>
 
-	    <div class="nav-bar">
-	     <h1>HIIII</h1>
-	    </div>
+      <div class="feat-photo">
+        <h2>Featured Photo</h2>
+        <div class="photo">
+        <img src="ImgError.png" class ="f-photo" alt="ImgError">  
+        </div>
+      </div>
 
-	    <div class ="feat-photo">
-	    	<h4> Featured Photo </h4>
-	    	<div class ="photo">
-	    	</div>
-	   	</div>
+      <div class="feat-projects">
+        <h2>Featured Projects</h2>
+        <div class="projects">
+          <div class="project" id="project1">
+            <img src="ImgError.png" class ="p-photo" alt="ImgError"> 
+          </div>
+          <div class="project" id="project2">
+            <img src="ImgError.png" class ="p-photo" alt="ImgError">  
+          </div>
+          <div class="project" id="project3">
+            <img src="ImgError.png" class ="p-photo" alt="ImgError"> 
+          </div>
+          <div class="project" id="project4">
+            <img src="ImgError.png" class ="p-photo" alt="ImgError"> 
+          </div>
+        </div>
+      </div>
 
+      <div class="skills-autobio">
+        <div class="sk-aupanel" id="skills">
+          <h2>Skills</h2>
+          <p>My skills are radical!</p>
+        </div>
+        <div class="sk-aupanel" id="autobio">
+          <h2>Autobiography</h2>
+          <p>I cry myself to sleep sometimes, and by sometimes I mean all the time, every night</p>
+        </div>
+      </div>
 
-	   	<div class ="feat-projects">
+      <div class="footer">
 
-	    	<h4> Featured Projects </h4>
-
-	    	<div class ="projects">
-
-	    	<div class ="project" id="project1">
-	    	</div>
-
-	    	<div class ="project" id="project2">
-	    	</div>
-
-	    	<div class ="project" id="project3">
-	    	</div>
-
-	    	<div class ="project" id="project4">
-	    	</div>
-
-	    	</div>
-
-
-	   	</div>
-
-	   	<div class ="skills-autobio">
-
-	    	<div class = "sk-aupanel" id ="skills">
-	    		<h5>Skills</h5>
-	    		<p> My skils are radical! </p>
-	    	</div>
-
-
-	    	<div class = "sk-aupanel" id ="autobio">
-	    		<h5>Autobiography</h5>
-	    		<p>I cry myself to sleep sometimes and by sometimes I mean all the time, every night</p>
-	    	</div>
-	    </div>
-
-	    <div class = "footer">
-	    	<h5> HI I AM FOOTER </h5>
-	    </div>
-
-</div>
+        <p>Y̸͎̖͕̟̬̋o̴̺͇̜̼͕͓̩̎ͅų̶̛͇̳̘̬̼̲̣͌̀͠ ̵̟̹͎̼̟̯̙͍̫̫̦̑̓̄̀͊̚h̴̨͕̹͉̭̩͍̖͐͗̈́ä̵̝͍̣̰̤͎̲̬̤̜́̄̕͝ͅv̸̪̙̱͔͛̈́͝ẹ̵̪̗̮̈̊̎͊̅̀ ̵͖̞̤͓͎̮̮͔̘̙̚ͅn̴̨͇̼͖̤̻͎̩̫̈́͆͗̃͛͘͝o̴̗͔̭̖̦̤͙̐̌͐̾̇̓̅̅͘ ̵̯̞͚̳̭̱̺̻͖̣̒̔̐͋̔͂̀͠͠á̸̢̢͓̗̳͉͚͚̭ć̷̞̜̗̯̱̪̹̥̲̂̾̂͆̈̈́̕͝c̵̰͎̠̱̠͉̠̞̔̒̆̂̓̆͝e̸͓̩̮̗͈̠̰͈̒͐͂̔̚s̴̳̏͋̌̆̉̃̐̄̈́̔̕ś̸̡̧̹̰̹͓̳̤̝̯̈́̅́̿̈́͘͝͝͠ͅ ̴̢̞̩̟́̆̇̋͊̄̏̌͛̍̕t̵̹̫̣̓̽͠o̸̢̯̰͓̰͖̩͇̬͓͂̀̐̓̌̈́̍́̆͌̕ ̸̬͇͚̣̮̜͔̒̄̌̚͝a̸͕͆́̓̅͆͘̕n̵̩̜̭̊̒͂̅̈́y̵̥̹͊̏̀ ̸̺̜̙̹͍͖̥̣̈́́̀͘ō̵̱͔̦͕̞̗̄̍͂͌̀͠f̸̛̰͕̣͉͚͎͂͂̉̾̚ ̷̨̞͔̗̳̪̺̬̪̭̣̃͌̃̽͋̾̃̿̂t̷̢̲̣͇̹̠̹͍̒h̴̜̲̘̉̅î̵̛̬͙̘͕̭̩̬̤͈̿̓̔͝͠s̷͇̣̹̙̄́̄̉͛̋̋͝ ̸̧̡̛͎̼̠̳̲̦̠̩͆̊̔̌̿͠͝͝D̶̢̙̜̖̫͍͓̑̅̀̀͋͌̌͆̅͂͘á̸̮̙̙̯͍͎̗̑̿̓́ͅt̶͇͙̺̀̈́a̸̜̻̦̩̬̱͍̍̔̈́́̾̃̋͆̕ͅ.̶̯̜̗̦͕̒̊̽̅͆͂̐͗͝ ̸̣̩̳͍̭̪̱̜̩͒̈́̊͜͝P̸̗̪̭̳̫̠͚͚̽l̶͓̰̿̚̕ş̷̦̹͙̗͈̱͙͕̔̋ͅͅ ̷̦͓̖̅̈́̽̍̈t̷̮̒̆ŕ̶͔̭̗̩̃̊͠y̵̨̫͓͔̼̞͓̱͖͍͐̈́͂͋̚ ̸̳̠͉̫͎͈͂̏͠ͅā̵̢̢̬̫͇̜͈̣͖̟͠ ̶̢̯͎͙͔̲̺̀̉͛͋͝ͅs̵̛̤̜̼͎̦̯͖̮̊̈́̄͌̅͗̽̿́͑͜ŭ̵̡̨͔͙̀̇͐͠m̴̯̝̫̫͎͉̱̩͓̅̊̈́̇̌͛͌͊͑͜͠m̷͈͉̼̮̘̰͙̝̬͍̀̌͌̆̉̀́̏̕͜ǫ̵̧̨̣͇̮͔̙͉̞͂̊͜͝n̷̢̛̬̠͈̫̬͉͖͋̆̊̆̀̐̈́͠ͅį̵̈́̈͆̾͒̈́́͝͠͝͝n̴̙̼̘͙̭̟̫̮̳͘͜g̸͕͕̫̥̘͙̼̜̪̩̈ ̶̨̖̗̪͖̦̞̘̙͋͗̂̌̈͊̄͜͜s̵̢̛̥̦͈̓͌͜p̸̥̱̳̰͙̮̈͜e̵̩͚̗̙̬̓͂̎̃̿͑͠l̶̡͖͚̤̙͕̪̝̝͊̌̄̄͛̚͝l̸͓̠͕̬͍̞̣̦͆̅͛͂̕͝ͅ ̵̡̙̬̠̭̥̈́̽̽̏i̸̠̩̐̚n̵̳͐̈́̅͌͆̋͆̀̿̓̚ş̸͎̮͖̳̙̻̪͓̱̖̓͂t̸̤̝̩͊̈̈͝͠e̵̯̯̝͙̝̼͌͐̅͑̌̾̍̃̕ͅą̴͈̯͉͚̣͕͌̏́͂͒͜͜͝d̵̬͇̀̍͛͘͝ͅ.̶̡̖̹̟̟̼͈̯̥̯̊̐̿̈̀̒͌̕ ̶̝̙̋͜D̵͍͙͎͇̠̦̫̯̫̉̽̀͐̾͌̓͛̅̇͜͝ͅò̸̰̜̝ņ̶̫̰͔̀͐̔͒͛̄͗ͅṯ̷̨̞̪̤͇̮̭͇̊̍ͅ ̵̨͓̮̗̠̻͚̲̣̖̘̏̐̃́̂̀̅̏p̵̛̯̞̋̄̒͊͋̂̓̓͘͘ȅ̶̫͍̙̖͕͇̪r̸̛̘̩̒̽̇́̑͐͆͑c̸̰͇͙̍̾̓̈́̊͑̒̍̉͠ͅe̶̬̗̱̟̻̦͂͛̋͘i̶̩̼̻̪̤̫̱͌̅͗̎͂̑́ͅv̷̧̨̛͙̑̌̓̿̈́̋̄̌̋͝ẽ̵̠̩̫̹͉̜̓̔̽͘͝͠͠ͅͅ ̵̡̼̰͔̯̙̟̩͉̽̊̂͘͝m̸̰̭̤̮̖̪̤͔̟̺̄͋ͅë̵̫̥̱̥̠̬́̄̇͒͗̃͝ͅ ̴͔̬̾́͆̊̄́͑D̵̮̩̞̤̰̣̫̊̾̀̐͐̃̀̔̚͝͠o̴͔͐̀̈̅ǹ̸̤̼̹̩̳̐͋̈́̊̀̔̊̋͝t̴̝͇̼̖̝̐͗͑̑ ̶̨̛̛̛͕̠̥͙͍͉̮̓̾P̴̡̥̝͔̹̞̤̣͚̙̆͛̎͐͐̅̆̈́̚͝ę̴̡̟͎̱͓̩̫̮̳̳̏͌̓͌̌r̸̛͈̣͔̟͇̰̂̑̀͌͜c̸̭̠̬̖̰̟͔̘̯̿̃̚e̶̡̯͉̜͍̒͊͑̀̔̂̈́̔͑͝ḯ̷̛̯̲́̉͌̓̂̉͋͋̕v̸̻͊̏̾̆͐̔͝ȩ̴̡̢̧̙̘̻̜̳̐̽̒ ̷̩̬̺͚̗̬͇̊̀͒̇͊͑̑͘͘m̴͇̱̞̱̠̳͖̬̓́͌͝e̶̠̦̣̥̭̽̂̀̽̋̆́̔̕͠ ̵̛̛̫̮͐͌̈́̈̆͛̕̕͜͝D̶͙͕̯̗̉ǫ̵͖̖̲̮̮̺͕͐͛̿͘n̵͕̟͓̠͖̱̽͛̽̓t̷̢̪͙̺̦̻̄̀̀̒̽̎͛̌ ̸̨͇̩̥̝͔͐̚P̷̘͔̟͎͚͚̻͕̼̙̅̋̔͛̌̕͠e̶̛̜̪̖͖̥̩̥̻̓̆̌̔̊̓̃͜ͅŕ̸̡̧̢͙̖̯̜̳͚̖͊̂͜c̵̢̢̰̪̱̱͗͋͒̍̋̓͘͘ĕ̷͚͖̗̫̬͍i̶͇̯̩͚͇̍̈͌v̷͔̞̝̲͉̟͔̀͌͝ē̷̢̧̘̈̿͗̔̈́̐͆̚ ̸̛̝̀͊̓̑̑̏̅͒͘͠m̵͙̘͖̟͎̉̿͒̀͘e̷̡͙̯̼̦̪̦͙͓̜̋͋ͅ ̶̡̗̥̯̫͇̪̬̥̣͊̄̀̒̚͝͝D̵͍͎̠̘̖̦̺́͑͑o̶̧͓̲̘̩̲̓͒ń̷̨̡̝͈͕͎̬͈̺̏̌͂ͅt̸̠̣̑́͌̃̇̐̽͒͐͝ ̷̲̻͔̫̄̃p̴̨͔̝͙̲̓̿ę̷͔̠͐r̶̨̧̡̠̞̼̟͇̠͙͛̂͋̓̎͌́̚c̵̡̛͖͎͍̰̔̉͗̆̈́͋͑͝ĕ̵̗̚ī̸̡̫̖̠͚͔͉̬̬̂̌v̷̛͕̺̹͍͖̻̹̖̺̇́̎͌̕̕͘͝͝ͅe̶̡̛̙͍̝̖͗̆̐̈̈́̔͜͝ ̵̛̛͕̩̪̱̊͌̔̒̉m̸̨̛̰͍͚̖̟̟̦̭͕͕͗̿̌́̐̂͛̚̚e̷̺͓̘̗̘̺̫̪͊̊͆̎ͅ
+̶̺̖͔͕̻̺͈̲̓ͅ </p>
 
 
-
-</body>
-
+      </div>
+    </div>
+  </body>
 </html>
